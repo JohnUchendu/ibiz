@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.ibiz.com.ng
+
+# Sitemaps
+Sitemap: https://www.ibiz.com.ng/sitemap.xml

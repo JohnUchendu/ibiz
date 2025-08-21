@@ -4,9 +4,11 @@ import React, { useRef, useState } from "react";
 
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import HtmlDocx from "html-docx-js/dist/html-docx";
+// import HtmlDocx from "html-docx-js/dist/html-docx";
 import { saveAs } from "file-saver";
 
+
+const HtmlDocx = require("html-docx-js/dist/html-docx");
 export default function LetterheadMaker() {
   const [companyName, setCompanyName] = useState("Your Company Ltd.");
   const [tagline, setTagline] = useState("Professional | Reliable | Trusted");

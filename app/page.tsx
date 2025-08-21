@@ -61,11 +61,11 @@ export default function HomePage() {
             href="/business-email"
           />
           {/* Growth Tools */}
-          <ToolCard
+          {/* <ToolCard
             title="Logo Maker"
             desc="Design simple, professional logos for your brand or business in minutes."
             href="/logo-maker"
-          />
+          /> */}
 
           <ToolCard
             title="Domain Checker"

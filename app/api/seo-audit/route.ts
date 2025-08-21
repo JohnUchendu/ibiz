@@ -78,7 +78,8 @@ export async function POST(req: Request) {
     });
 
     const status = res.status;
-    const headers = Object.fromEntries(res.headers.entries());
+  const headers = Object.fromEntries(res.headers as any);
+
     const isHtml = (headers["content-type"] || "").includes("text/html");
 
     let html = "";

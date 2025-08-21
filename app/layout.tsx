@@ -5,8 +5,6 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-// import VisitorTracker from "./VisitorTracker/page";
-// import VisitorCounter from "@/components/VisitorCounter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,8 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      {/* <VisitorCounter/> */}
-      {/* <VisitorTracker/> */}
+     
       <Nav />
       <html lang="en">
         {/* NOTE: Add your AdSense script here after approval */}
