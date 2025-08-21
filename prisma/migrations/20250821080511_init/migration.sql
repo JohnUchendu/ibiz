@@ -1,0 +1,7 @@
+-- CreateTable
+CREATE TABLE "Visitor" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "lastVisit" DATETIME NOT NULL,
+    "visits" INTEGER NOT NULL DEFAULT 1
+);
