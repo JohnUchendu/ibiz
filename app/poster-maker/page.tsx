@@ -19,6 +19,8 @@ import {
 } from "@/components/ui/select";
 import { Slider } from "@/components/ui/slider";
 import { Label } from "@/components/ui/label";
+import PromoBanner from "@/components/PromoBanner";
+import PromoPopup from "@/components/PromoPopUp";
 
 type ElementType = {
   id: string;
@@ -438,7 +440,7 @@ export default function PosterFlyerMaker() {
             </CardContent>
           </Card>
         </aside>
-      </div>
+      </div><PromoBanner/><PromoPopup/>
     </>
   );
 }

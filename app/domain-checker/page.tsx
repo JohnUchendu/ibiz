@@ -1,5 +1,7 @@
 "use client";
 
+import PromoBanner from "@/components/PromoBanner";
+import PromoPopup from "@/components/PromoPopUp";
 import { useState } from "react";
 
 export default function DomainChecker() {
@@ -74,6 +76,8 @@ export default function DomainChecker() {
           )}
         </div>
       </main>
+      <PromoBanner/>
+      <PromoPopup/>
     </div>
   );
 }

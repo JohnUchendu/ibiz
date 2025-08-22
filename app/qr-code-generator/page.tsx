@@ -3,6 +3,8 @@
 import { useState } from "react";
 
 import AdSlot from "@/components/AdSlot";
+import PromoBanner from "@/components/PromoBanner";
+import PromoPopup from "@/components/PromoPopUp";
 
 const NIGERIAN_BANKS = [
   "Access Bank",
@@ -240,7 +242,8 @@ export default function QRCodeGeneratorPage() {
           </ul>
         </section>
       </main>
-      
+      <PromoBanner/>
+      <PromoPopup/>
     </>
   );
 }

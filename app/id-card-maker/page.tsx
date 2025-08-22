@@ -13,6 +13,8 @@ import {
   SelectItem,
   SelectValue,
 } from "@/components/ui/select";
+import PromoBanner from "@/components/PromoBanner";
+import PromoPopup from "@/components/PromoPopUp";
 
 export default function IDCardMaker() {
   const [name, setName] = useState("");
@@ -151,6 +153,9 @@ export default function IDCardMaker() {
       <Button onClick={downloadPDF} className="w-full max-w-md">
         Export as PDF
       </Button>
+
+      <PromoBanner/>
+      <PromoPopup/>
     </div>
   );
 }

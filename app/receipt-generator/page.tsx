@@ -6,6 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import jsPDF from "jspdf";
+import PromoPopup from "@/components/PromoPopUp";
+import PromoBanner from "@/components/PromoBanner";
 
 type Item = {
   name: string;
@@ -111,6 +113,8 @@ export default function ReceiptGenerator() {
           </CardContent>
         </Card>
       </div>
+      <PromoBanner/>
+      <PromoPopup/>
     </>
   );
 }

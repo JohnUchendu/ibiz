@@ -3,6 +3,8 @@
 // ```tsx
 // app/seo-audit/page.tsx
 "use client";
+import PromoBanner from "@/components/PromoBanner";
+import PromoPopup from "@/components/PromoPopUp";
 import { useState } from "react";
 import { z } from "zod";
 
@@ -218,6 +220,8 @@ export default function Page() {
           )}
         </div>
       </div>
+      <PromoBanner/>
+      <PromoPopup/>
     </>
   );
 }

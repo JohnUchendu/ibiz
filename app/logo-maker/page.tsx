@@ -1767,6 +1767,8 @@
 
 "use client";
 
+import PromoBanner from "@/components/PromoBanner";
+import PromoPopup from "@/components/PromoPopUp";
 import { useRef } from "react";
 
 export default function LogoMaker() {
@@ -1839,6 +1841,8 @@ export default function LogoMaker() {
       >
         Download Logo
       </button>
+      <PromoBanner/>
+      <PromoPopup/>
     </div>
   );
 }
