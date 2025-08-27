@@ -1,9 +1,25 @@
+import Script from "next/script"
 import ToolCard from "@/components/ToolCard";
-import AdSlot from "@/components/AdSlot";
+// import AdSlot from "@/components/AdSlot";
+import TestimonialCarousel from "@/components/Testimonial";
 
 export default function HomePage() {
   return (
     <>
+
+    <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-8Q75XKPD1T"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8Q75XKPD1T');
+        `}
+      </Script>
+
       <main className="mx-auto max-w-6xl px-4 py-10">
         <section className="text-center">
           <h1 className="text-3xl sm:text-4xl font-extrabold">
@@ -15,7 +31,7 @@ export default function HomePage() {
           </p>
         </section>
 
-        <AdSlot />
+        {/* <AdSlot /> */}
 
         <section className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <ToolCard
@@ -33,11 +49,7 @@ export default function HomePage() {
             desc="Instant receipts for shops and freelancers — printable PDFs."
             href="/receipt-generator"
           />
-          <ToolCard
-            title="Poster & Flyer Maker"
-            desc="Editable posters: 'Pay by Transfer', 'POS Available', event flyers — export to PDF."
-            href="/poster-maker"
-          />
+         
           <ToolCard
             title="ID Card Maker"
             desc="Simple ID cards for staff, churches, schools — upload photo, export PDF."
@@ -61,17 +73,13 @@ export default function HomePage() {
             href="/business-email"
           />
           {/* Growth Tools */}
-          {/* <ToolCard
-            title="Logo Maker"
-            desc="Design simple, professional logos for your brand or business in minutes."
-            href="/logo-maker"
-          /> */}
+         
 
           <ToolCard
             title="Domain Checker"
             desc="Quickly check if your business domain is available and secure your online identity."
             href="/domain-checker"
-          />
+            />
 
           <ToolCard
             title="Website Speed Test"
@@ -84,16 +92,13 @@ export default function HomePage() {
             href="/letterhead-maker"
           />
 
-          {/* <ToolCard
-            title="SSL/TLS Checker"
-            desc="Verify SSL/TLS certificates to ensure your website is secure and trusted."
-            href="/ssl-tls-checker"
-          /> */}
+         
         </section>
 
-        <AdSlot />
+        {/* <AdSlot /> */}
 
-        <section className="mt-10 prose max-w-none">
+            <TestimonialCarousel/>
+        {/* <section className="mt-10 prose max-w-none">
           <h2 className="text-2xl font-bold">Why these “boring” tools?</h2>
           <p>
             Nigerian SMEs need fast, reliable tools to get paid and look
@@ -113,7 +118,7 @@ export default function HomePage() {
             <li>Free website for businesses</li>
             <li>Business emails for businesses</li>
           </ul>
-        </section>
+        </section> */}
       </main>
     </>
   );

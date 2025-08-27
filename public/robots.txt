@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.ibiz.com.ng
+Host: https://www.ibiz.name.ng
 
 # Sitemaps
-Sitemap: https://www.ibiz.com.ng/sitemap.xml
+Sitemap: https://www.ibiz.name.ng/sitemap.xml

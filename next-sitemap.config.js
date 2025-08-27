@@ -3,7 +3,7 @@
 
 // next-sitemap.config.js
 module.exports = {
-    siteUrl: 'https://www.ibiz.com.ng', // replace with your domain
+    siteUrl: 'https://www.ibiz.name.ng',// replace wth your domain
     generateRobotsTxt: true, // (optional)
     changefreq: 'weekly',
     priority: 0.7,

@@ -5,6 +5,7 @@ import { useState } from "react";
 import AdSlot from "@/components/AdSlot";
 import PromoBanner from "@/components/PromoBanner";
 import PromoPopup from "@/components/PromoPopUp";
+import PaidQRCodeGenerator from "@/components/QrCodeSite";
 
 const NIGERIAN_BANKS = [
   "Access Bank",
@@ -240,6 +241,9 @@ export default function QRCodeGeneratorPage() {
               pay from their app.
             </li>
           </ul>
+        </section>
+        <section>
+          <PaidQRCodeGenerator/>
         </section>
       </main>
       <PromoBanner/>
