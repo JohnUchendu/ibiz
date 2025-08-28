@@ -249,7 +249,7 @@ import { Button } from "@/components/ui/button";
 
 export default function MarketingEmailPlans() {
   const [contacts, setContacts] = useState<number>(1000);
-  const exchangeRate = 1650; // 1 USD = 1650 NGN
+  const exchangeRate = 1500; // 1 USD = 1500 NGN
 
   const marketingTiers = {
     1000: {
