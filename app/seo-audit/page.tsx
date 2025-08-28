@@ -5,6 +5,7 @@
 "use client";
 import PromoBanner from "@/components/PromoBanner";
 import PromoPopup from "@/components/PromoPopUp";
+import TestimonialCarousel from "@/components/Testimonial";
 import { useState } from "react";
 import { z } from "zod";
 
@@ -220,6 +221,7 @@ export default function Page() {
           )}
         </div>
       </div>
+      <TestimonialCarousel/>
       <PromoBanner/>
       <PromoPopup/>
     </>

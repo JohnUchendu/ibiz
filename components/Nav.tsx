@@ -1,8 +1,7 @@
 "use client";
-
 import { useState } from "react";
 import Link from "next/link";
-import { Menu } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,110 +11,300 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-black">
-             iBiz
+          <div className="flex items-center cursor-pointer">
+            <Link href="/">
+              <Image
+                src="/logos/logo.png"
+                height={100}
+                width={100}
+                alt="iBiz logo"
+              />
             </Link>
           </div>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 items-center">
-            {/* Business Essentials */}
+          {/* Hamburger Menu */}
+          <div className="flex items-center sm:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 rounded-md text-gray-600 hover:text-blue-600 hover:bg-gray-100"
+            >
+              ☰
+            </button>
+          </div>
+
+          {/* Menu Items */}
+          <div className="hidden sm:flex sm:space-x-8 sm:items-center">
+            {/* Tools */}
             <div className="group relative">
-              <button className="hover:text-blue-600 font-medium">
-                Business Essentials
+              <button className="text-gray-700 hover:text-blue-600">
+                Tools
               </button>
-              <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 w-56">
-                <ul className="py-2">
-                  <li><Link href="/invoice-generator" className="block px-4 py-2 hover:bg-gray-100">Invoice Generator</Link></li>
-                  <li><Link href="/receipt-generator" className="block px-4 py-2 hover:bg-gray-100">Receipt Generator</Link></li>
-                  <li><Link href="/letterhead-maker" className="block px-4 py-2 hover:bg-gray-100">Letterhead Maker</Link></li>
-                  <li><Link href="/id-card-maker" className="block px-4 py-2 hover:bg-gray-100">ID Card Maker</Link></li>
-                </ul>
-              </div>
+              <ul className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg p-2 w-52">
+                {[
+                  {
+                    name: "QR Code Generator",
+                    href: "/qr-code-generator",
+                    tag: "New",
+                  },
+                  {
+                    name: "Invoice Generator",
+                    href: "invoice-generator",
+                    tag: "New",
+                  },
+                  {
+                    name: "Receipt Generator",
+                    href: "receipt-generator",
+                    tag: "New",
+                  },
+                  {
+                    name: "ID Card Maker",
+                    href: "id-card-generator",
+                    tag: "New",
+                  },
+                  { name: "SEO Audit", href: "seo-audit", tag: "New" },
+                  {
+                    name: "Domain Checker",
+                    href: "domain-checker",
+                    tag: "New",
+                  },
+                  {
+                    name: "Website Speed Tester",
+                    href: "speed-test",
+                    tag: "New",
+                  },
+                  {
+                    name: "Letterhead Maker",
+                    href: "letterhead-maker",
+                    tag: "New",
+                  },
+                ].map((tool) => (
+                  <li
+                    key={tool.name}
+                    className="px-4 py-2 hover:bg-gray-100 flex justify-between items-center"
+                  >
+                    <Link href={tool.href}>{tool.name}</Link>
+                    <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                      {tool.tag}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </div>
 
             {/* Website */}
-            <div className="group relative">
-              <button className="hover:text-blue-600 font-medium">
-                Website
-              </button>
-              <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 w-64">
-                <ul className="py-2">
-                  <li><Link href="/business-website" className="block px-4 py-2 hover:bg-gray-100">Business Website</Link></li>
-                  <li><Link href="/ecommerce-storefront" className="block px-4 py-2 hover:bg-gray-100">eCommerce Storefront</Link></li>
-                  <li><Link href="/restaurant-website" className="block px-4 py-2 hover:bg-gray-100">Restaurant/Menu Website</Link></li>
-                  <li><Link href="/freelancer-website" className="block px-4 py-2 hover:bg-gray-100">Freelancer Website</Link></li>
-                  <li><Link href="/portfolio-website" className="block px-4 py-2 hover:bg-gray-100">Portfolio Website</Link></li>
-                </ul>
+            <div className="relative group">
+              <button className="hover:text-blue-600">Website</button>
+              <div className="absolute hidden group-hover:block bg-white shadow-md rounded-md mt-2 w-64">
+                <Link
+                  href="/website"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Business Website{" "}
+                  <span className="ml-2 text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded">
+                    HOT
+                  </span>
+                </Link>
+                <Link
+                  href="/website"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  eCommerce Storefront{" "}
+                  <span className="ml-2 text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded">
+                    HOT
+                  </span>
+                </Link>
+                <Link
+                  href="/website"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Restaurant/Menu Website{" "}
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                    NEW
+                  </span>
+                </Link>
+                <Link
+                  href="/website"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Freelancer Website{" "}
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                    NEW
+                  </span>
+                </Link>
+                <Link
+                  href="/website"
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  Portfolio Website{" "}
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                    NEW
+                  </span>
+                </Link>
               </div>
             </div>
 
             {/* Email */}
             <div className="group relative">
-              <button className="hover:text-blue-600 font-medium">
+              <button className="text-gray-700 hover:text-blue-600">
                 Email
               </button>
-              <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 w-56">
-                <ul className="py-2">
-                  <li><Link href="/business-email" className="block px-4 py-2 hover:bg-gray-100">Business Email</Link></li>
-                  <li><Link href="/marketing-email" className="block px-4 py-2 hover:bg-gray-100">Marketing Email</Link></li>
-                </ul>
-              </div>
+              <ul className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg p-2 w-56">
+                {[
+                  { name: "Business Email", href: "/email", tag: "Hot" },
+                  { name: "Marketing Email", href: "/email", tag: "Hot" },
+                ].map((email) => (
+                  <li
+                    key={email.name}
+                    className="px-4 py-2 hover:bg-gray-100 flex justify-between items-center"
+                  >
+                    <Link href={email.href}>{email.name}</Link>
+                    <span className="ml-2 text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded">
+                      {email.tag}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </div>
 
-            {/* Marketing & Growth */}
+            {/* SMS */}
             <div className="group relative">
-              <button className="hover:text-blue-600 font-medium">
-                Marketing & Growth
-              </button>
-              <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 w-64">
-                <ul className="py-2">
-                  <li><Link href="/seo-audit" className="block px-4 py-2 hover:bg-gray-100">SEO Audit</Link></li>
-                  <li><Link href="/website-speed-tester" className="block px-4 py-2 hover:bg-gray-100">Website Speed Tester</Link></li>
-                  <li><Link href="/qr-code-generator" className="block px-4 py-2 hover:bg-gray-100">QR Code Generator</Link></li>
-                </ul>
-              </div>
+              <button className="text-gray-700 hover:text-blue-600">SMS</button>
+              <ul className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg p-2 w-56">
+                <li className="px-4 py-2 flex justify-between items-center text-gray-400">
+                  SMS Tools
+                  <span className="ml-2 text-xs bg-yellow-100 text-yellow-600 px-2 py-0.5 rounded cursor-progress">
+                    Coming Soon
+                  </span>
+                </li>
+              </ul>
             </div>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="flex items-center md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)}>
-              <Menu className="h-6 w-6" />
-            </button>
           </div>
         </div>
       </div>
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-lg">
-          <ul className="py-2 space-y-2">
-            <li className="px-4 font-semibold">Business Essentials</li>
-            <li><Link href="/invoice-generator" className="block px-6 py-2 hover:bg-gray-100">Invoice Generator</Link></li>
-            <li><Link href="/receipt-generator" className="block px-6 py-2 hover:bg-gray-100">Receipt Generator</Link></li>
-            <li><Link href="/letterhead-maker" className="block px-6 py-2 hover:bg-gray-100">Letterhead Maker</Link></li>
-            <li><Link href="/id-card-maker" className="block px-6 py-2 hover:bg-gray-100">ID Card Maker</Link></li>
+        <div className="sm:hidden bg-white shadow-lg">
+          <ul className="p-4 space-y-2">
+            <li>
+              <button className="font-semibold">Tools</button>
+              <ul className="pl-4">
+                <li className="flex justify-between">
+                  <Link href="/qr-code-generator">QR Code Generator</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                    New
+                  </span>
+                </li>
+                <li className="flex justify-between">
+                  <Link href="/invoice-generator">Invoice Generator</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                    New
+                  </span>
+                </li>
+                <li className="flex justify-between">
+                  <Link href="/receipt-generator">Receipt Generator</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                    New
+                  </span>
+                </li>
+                <li className="flex justify-between">
+                  <Link href="/id-card-maker">ID Card Maker</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                    New
+                  </span>
+                </li>
+                <li className="flex justify-between">
+                  <Link href="/seo-audit">SEO Audit</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-red-600 px-2 py-0.5 rounded">
+                    Hot
+                  </span>
+                </li>
+                <li className="flex justify-between">
+                  <Link href="/domain-checker">Domain Checker</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-red-600 px-2 py-0.5 rounded">
+                    Hot
+                  </span>
+                </li>
+                <li className="flex justify-between">
+                  <Link href="/speed-test">Website Speed Tester</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                    New
+                  </span>
+                </li>
+                <li className="flex justify-between">
+                  <Link href="/letterhead-maker">Letterhead Maker</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                    New
+                  </span>
+                </li>
+              </ul>
+            </li>
 
-            <li className="px-4 font-semibold mt-2">Website</li>
-            <li><Link href="/business-website" className="block px-6 py-2 hover:bg-gray-100">Business Website</Link></li>
-            <li><Link href="/business-website" className="block px-6 py-2 hover:bg-gray-100">eCommerce Storefront</Link></li>
-            <li><Link href="/business-website" className="block px-6 py-2 hover:bg-gray-100">Restaurant/Menu Website</Link></li>
-            <li><Link href="/business-website" className="block px-6 py-2 hover:bg-gray-100">Freelancer Website</Link></li>
-            <li><Link href="/business-website" className="block px-6 py-2 hover:bg-gray-100">Portfolio Website</Link></li>
-           
-       
+            <li>
+              <button className="font-semibold">Website</button>
+              <ul className="pl-4">
+                <li className="flex justify-between">
+                  <Link href="/website">Business Website</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-red-600 px-2 py-0.5 rounded">
+                    Hot
+                  </span>
+                </li>
+                <li className="flex justify-between">
+                  <Link href="/website">E-commerce Storefront</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-red-600 px-2 py-0.5 rounded">
+                    Hot
+                  </span>
+                </li>
+                <li className="flex justify-between">
+                  <Link href="/website">Restaurant/Menu Website</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                    New
+                  </span>
+                </li>
+                <li className="flex justify-between">
+                  <Link href="/website">Freelancer Website</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                    New
+                  </span>
+                </li>
+                <li className="flex justify-between">
+                  <Link href="/website">Portfolio Website</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                    New
+                  </span>
+                </li>
+              </ul>
+            </li>
 
-            <li className="px-4 font-semibold mt-2">Email</li>
-            <li><Link href="/business-email" className="block px-6 py-2 hover:bg-gray-100">Business Email</Link></li>
-            <li><Link href="/business-email" className="block px-6 py-2 hover:bg-gray-100">Marketing Email</Link></li>
-           
+            <li>
+              <button className="font-semibold">Email</button>
+              <ul className="pl-4">
+                <li className="flex justify-between">
+                  <Link href="/email">Business Email</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                    New
+                  </span>
+                </li>
+                <li className="flex justify-between">
+                  <Link href="/email">Marketing Email</Link>
+                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
+                    New
+                  </span>
+                </li>
+              </ul>
+            </li>
 
-            <li className="px-4 font-semibold mt-2">Marketing & Growth</li>
-            <li><Link href="/seo-audit" className="block px-6 py-2 hover:bg-gray-100">SEO Audit</Link></li>
-            <li><Link href="/website-speed-tester" className="block px-6 py-2 hover:bg-gray-100">Website Speed Tester</Link></li>
-            <li><Link href="/qr-code-generator" className="block px-6 py-2 hover:bg-gray-100">QR Code Generator</Link></li>
+            <li>
+              <button className="font-semibold">SMS</button>
+              <ul className="pl-4">
+                <li className="flex justify-between text-gray-400">
+                  SMS Tools
+                  <span className="ml-2 text-xs bg-yellow-100 text-yellow-600 px-2 py-0.5 rounded">
+                    Coming Soon
+                  </span>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       )}

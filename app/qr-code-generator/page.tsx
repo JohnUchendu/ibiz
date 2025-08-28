@@ -6,6 +6,7 @@ import AdSlot from "@/components/AdSlot";
 import PromoBanner from "@/components/PromoBanner";
 import PromoPopup from "@/components/PromoPopUp";
 import PaidQRCodeGenerator from "@/components/QrCodeSite";
+import TestimonialCarousel from "@/components/Testimonial";
 
 const NIGERIAN_BANKS = [
   "Access Bank",
@@ -246,6 +247,7 @@ export default function QRCodeGeneratorPage() {
           <PaidQRCodeGenerator/>
         </section>
       </main>
+      <TestimonialCarousel/>
       <PromoBanner/>
       <PromoPopup/>
     </>

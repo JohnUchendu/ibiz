@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/select";
 import PromoBanner from "@/components/PromoBanner";
 import PromoPopup from "@/components/PromoPopUp";
+import TestimonialCarousel from "@/components/Testimonial";
 
 export default function IDCardMaker() {
   const [name, setName] = useState("");
@@ -62,10 +63,10 @@ export default function IDCardMaker() {
     <div className="min-h-screen flex flex-col items-center justify-center p-6 space-y-6">
       <h1 className="text-2xl font-bold">Simple ID Card Maker</h1>
       <h1 className="text-3xl font-bold text-center mb-6">
-      Brand credibility, executive-grade identification
+        Brand credibility, executive-grade identification
       </h1>
       <p className="text-center text-gray-600 mb-8">
-       Custom ID cards that make your team look and feel official
+        Custom ID cards that make your team look and feel official
       </p>
       {/* Inputs */}
       <div className="w-full max-w-md space-y-3">
@@ -153,9 +154,9 @@ export default function IDCardMaker() {
       <Button onClick={downloadPDF} className="w-full max-w-md">
         Export as PDF
       </Button>
-
-      <PromoBanner/>
-      <PromoPopup/>
+      <TestimonialCarousel />
+      <PromoBanner />
+      <PromoPopup />
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import PromoBanner from "@/components/PromoBanner";
 import PromoPopup from "@/components/PromoPopUp";
+import TestimonialCarousel from "@/components/Testimonial";
 import { useState } from "react";
 
 export default function DomainChecker() {
@@ -75,6 +76,7 @@ export default function DomainChecker() {
             </div>
           )}
         </div>
+        <TestimonialCarousel/>
       </main>
       <PromoBanner/>
       <PromoPopup/>

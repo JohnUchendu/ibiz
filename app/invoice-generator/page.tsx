@@ -226,6 +226,7 @@ import jsPDF from "jspdf";
 import QRCode from "qrcode";
 import PromoBanner from "@/components/PromoBanner";
 import PromoPopup from "@/components/PromoPopUp";
+import TestimonialCarousel from "@/components/Testimonial";
 
 type InvoiceItem = {
   desc: string;
@@ -421,6 +422,7 @@ export default function InvoiceGenerator() {
           </CardContent>
         </Card>
       </div>
+      <TestimonialCarousel/>
       <PromoBanner/>
       <PromoPopup/>
     </>

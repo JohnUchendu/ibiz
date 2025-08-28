@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import PromoBanner from "@/components/PromoBanner";
+import MarketingEmailPlans from "@/components/EmailComponents/Marketing";
+import TestimonialCarousel from "@/components/Testimonial";
 
 export default function BusinessEmailPlans() {
   const [billing, setBilling] = useState<"monthly" | "yearly">("monthly");
@@ -198,6 +200,8 @@ export default function BusinessEmailPlans() {
           })}
         </div>
       </div>
+      <MarketingEmailPlans />
+      <TestimonialCarousel />
 
       <PromoBanner />
 

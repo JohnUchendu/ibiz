@@ -30,7 +30,7 @@ const testimonials: TestimonialProps[] = [
     businessLogo: "/logos/ubani-law.png", // replace with actual
     businessWebsite: "https://kkubaniandco.com",
     review:
-      "The Business Starter Website and Email package gave us a professional online presence that matches the reputation of our firm. Our clients now find it easier to connect with us.",
+      "I trusted their services and it is so good. The Business Starter Website and Email package gave us a professional online presence that matches the reputation of our firm. Our clients now find it easier to connect with us.",
     photo: "/clients/ubani.png", // replace with actual
   },
   {
@@ -107,10 +107,7 @@ export default function TestimonialCarousel() {
   return (
     <section className="py-12 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center mb-10">
-          What Our Clients Say
-        </h2> 
-
+      
         <Carousel
           plugins={[plugin.current]}
           className="w-full max-w-xl mx-auto"

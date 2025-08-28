@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import jsPDF from "jspdf";
 import PromoPopup from "@/components/PromoPopUp";
 import PromoBanner from "@/components/PromoBanner";
+import TestimonialCarousel from "@/components/Testimonial";
 
 type Item = {
   name: string;
@@ -113,6 +114,7 @@ export default function ReceiptGenerator() {
           </CardContent>
         </Card>
       </div>
+      <TestimonialCarousel/>
       <PromoBanner/>
       <PromoPopup/>
     </>

@@ -8,6 +8,7 @@ import jsPDF from "jspdf";
 import { saveAs } from "file-saver";
 import PromoBanner from "@/components/PromoBanner";
 import PromoPopup from "@/components/PromoPopUp";
+import TestimonialCarousel from "@/components/Testimonial";
 
 const HtmlDocx = require("html-docx-js/dist/html-docx");
 export default function LetterheadMaker() {
@@ -432,6 +433,7 @@ export default function LetterheadMaker() {
           </div>
         </div>
       </div>
+      <TestimonialCarousel/>
       <PromoBanner />
       <PromoPopup />
     </>
