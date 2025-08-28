@@ -55,22 +55,22 @@ export default function HomePage() {
             desc="Simple ID cards for staff, churches, schools — upload photo, export PDF."
             href="/id-card-maker"
           />
-          <ToolCard
-            title="Website Builder"
-            desc="Get a professional website built for freelancers and business owners. Hosting, SEO & 3 business emails included."
-            href="/website-builder"
-          />
 
           <ToolCard
             title="SEO Audit Tool"
             desc="Instantly check your website’s SEO health — metadata, performance, technical SEO & more."
             href="/seo-audit"
           />
+          <ToolCard
+            title="Website Builder"
+            desc="Get a professional website built for freelancers and business owners. Hosting, SEO & 3 business emails included."
+            href="/website"
+          />
 
           <ToolCard
             title="Business Email"
             desc="Create professional custom emails (you@yourbusiness.com) to build trust with clients."
-            href="/business-email"
+            href="/email"
           />
           {/* Growth Tools */}
          
@@ -86,11 +86,11 @@ export default function HomePage() {
             desc="Analyze your site’s speed and performance, with insights to boost conversions."
             href="/website-speed-test"
           />
-          <ToolCard
-            title="Letterhead Maker"
-            desc="Design professional company letterheads and export them as PDF or Word documents."
-            href="/letterhead-maker"
-          />
+            <ToolCard
+              title="Letterhead Maker"
+              desc="Design professional company letterheads and export them as PDF or Word documents."
+              href="/letterhead-maker"
+            />
 
          
         </section>
