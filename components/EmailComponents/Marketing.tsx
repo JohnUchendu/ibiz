@@ -261,7 +261,7 @@ export default function MarketingEmailPlans() {
         "No Marketing Analytics",
         "No Dedicated IPs",
       ],
-      priceUSD: 15.5,
+      priceUSD: 11,
       cta: "https://paystack.com/pay/dummy_1000",
       tag: "Starter",
     },
@@ -368,8 +368,9 @@ export default function MarketingEmailPlans() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-12">
       <h2 className="text-3xl font-extrabold mb-8 text-center">
-        Marketing Email Plans
+        Marketing Email Plans<span className="text-xs">Contacts per plan</span>
       </h2>
+
 
       {/* Slider */}
       <div className="mb-8">
@@ -382,7 +383,7 @@ export default function MarketingEmailPlans() {
           onChange={(e) =>
             setContacts(milestones[parseInt(e.target.value)])
           }
-          className="w-full accent-slate-900"
+          className="w-full accent-slate-900 "
         />
         <div className="flex justify-between text-sm mt-2">
           {milestones.map((m) => (
@@ -390,7 +391,7 @@ export default function MarketingEmailPlans() {
               key={m}
               className={`${
                 m === contacts ? "font-bold text-slate-900" : "text-gray-400"
-              }`}
+              } text-[7.5px] md:text-2x`}
             >
               {m.toLocaleString()}
             </span>
