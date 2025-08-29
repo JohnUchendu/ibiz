@@ -255,11 +255,11 @@ export default function MarketingEmailPlans() {
     1000: {
       title: "Starter Marketing",
       features: [
-        "Yes Ticket Support",
-        "1 Audience",
-        "1 Domain",
+        "Simple Ticket Support",
+        "1 basic customer list",
+        "Send from your own brand - 1 domain",
         "No Marketing Analytics",
-        "No Dedicated IPs",
+        "Shared sending system",
       ],
       priceUSD: 11,
       cta: "https://paystack.com/pay/dummy_1000",
@@ -268,7 +268,7 @@ export default function MarketingEmailPlans() {
     5000: {
       title: "Pro Marketing",
       features: [
-        "Slack & Ticket Support",
+        "Priority Ticket Support",
         "Unlimited Audiences",
         "Unlimited Domains",
         "Marketing Analytics",
@@ -281,7 +281,7 @@ export default function MarketingEmailPlans() {
     10000: {
       title: "Pro Marketing",
       features: [
-        "Slack & Ticket Support",
+       "Priority Ticket Support",
         "Unlimited Audiences",
         "Unlimited Domains",
         "Marketing Analytics",
@@ -294,7 +294,7 @@ export default function MarketingEmailPlans() {
     25000: {
       title: "Pro Marketing",
       features: [
-        "Slack & Ticket Support",
+       "Priority Ticket Support",
         "Unlimited Audiences",
         "Unlimited Domains",
         "Marketing Analytics",
@@ -307,7 +307,7 @@ export default function MarketingEmailPlans() {
     50000: {
       title: "Pro Marketing",
       features: [
-        "Slack & Ticket Support",
+       "Priority Ticket Support",
         "Unlimited Audiences",
         "Unlimited Domains",
         "Marketing Analytics",
@@ -320,7 +320,7 @@ export default function MarketingEmailPlans() {
     100000: {
       title: "Pro Marketing",
       features: [
-        "Slack & Ticket Support",
+        "Priority Ticket Support",
         "Unlimited Audiences",
         "Unlimited Domains",
         "Marketing Analytics",
@@ -333,7 +333,7 @@ export default function MarketingEmailPlans() {
     150000: {
       title: "Pro Marketing",
       features: [
-        "Slack & Ticket Support",
+       "Priority Ticket Support",
         "Unlimited Audiences",
         "Unlimited Domains",
         "Marketing Analytics",
@@ -346,11 +346,11 @@ export default function MarketingEmailPlans() {
     200000: {
       title: "Enterprise Marketing",
       features: [
-        "Priority Support",
+        "Priority Ticket Support",
         "Unlimited Audiences",
         "Unlimited Domains",
         "Marketing Analytics",
-        "Dedicated IPs included",
+        "No Dedicated IP (with add-on)",
       ],
       priceUSD: 0, // Custom pricing
       cta: "https://paystack.com/pay/dummy_200000",
