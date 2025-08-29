@@ -34,6 +34,10 @@ export default function ContactSection() {
           </li>
         ))}
       </ul>
+      <h2>Address</h2>
+      <p>Number 4 Miller Avenue, Cecilia Bus Stop, off IAUE, Port Harcourt</p>
+      <h2>Phone</h2>
+      <p>0703 658 0994</p>
     </section>
   );
 }
