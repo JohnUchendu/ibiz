@@ -34,7 +34,7 @@ export default function PricingPlans() {
       priceYearly: 389_997,
       description: "Best value — conversion-focused site for growing brands.",
       features: [
-        "Up to 5 pages (Home, About, Services, Blog, Contact)",
+        "Up to 50 pages (Home, About, Services, Blog, Contact, service pages and more)",
         "Everything in starter",
         "On-page SEO & sitemap",
         "Performance optimization",

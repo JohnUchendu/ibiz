@@ -30,7 +30,7 @@ const testimonials: TestimonialProps[] = [
     businessLogo: "/logos/ubani-law.png", // replace with actual
     businessWebsite: "https://kkubaniandco.com",
     review:
-      "I trusted their services and it is so good. The Business Starter Website and Email package gave us a professional online presence that matches the reputation of our firm. Our clients now find it easier to connect with us.",
+      "I trusted their services and it is so good. The Business Growth Website and Email package gave us a professional online presence that matches the reputation of our firm. Our clients now find it easier to connect with us.",
     photo: "/clients/ubani.png", // replace with actual
   },
   {
