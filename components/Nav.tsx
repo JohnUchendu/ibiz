@@ -105,16 +105,16 @@ export default function Navbar() {
                   </span>
                 </Link>
                 <Link
-                  href="/website"
+                  href="/website/online-store"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
-                  eCommerce Storefront{" "}
+                  Online Store{" "}
                   <span className="ml-2 text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded">
                     HOT
                   </span>
                 </Link>
                 <Link
-                  href="/website"
+                  href="/website/"
                   className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Restaurant/Menu Website{" "}
@@ -250,7 +250,7 @@ export default function Navbar() {
                   </span>
                 </li>
                 <li className="flex justify-between">
-                  <Link href="/website">E-commerce Storefront</Link>
+                  <Link href="/website/online-store">Online Store</Link>
                   <span className="ml-2 text-xs bg-green-100 text-red-600 px-2 py-0.5 rounded">
                     Hot
                   </span>

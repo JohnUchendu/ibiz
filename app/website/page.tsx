@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import EcommercePlan from "@/components/Ecommerce";
+    
 import TestimonialCarousel from "@/components/Testimonial";
 
 export default function PricingPlans() {
@@ -221,7 +221,7 @@ export default function PricingPlans() {
             );
           })}
 
-          <EcommercePlan />
+  
         </div>
 
         {/* <div className="mt-8 text-sm text-slate-500">
@@ -234,7 +234,7 @@ export default function PricingPlans() {
           <p className="text-gray-600 mb-6">
             Ready for your free website? Reach out to our support team now.
           </p>
-          <a href="mailto:support@yourdomain.com">
+          <a href="mailto:support@ibiz.name.ng" id="contact">
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
               Email Us
             </Button>
