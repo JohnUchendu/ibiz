@@ -113,33 +113,7 @@ export default function Navbar() {
                     HOT
                   </span>
                 </Link>
-                <Link
-                  href="/website/"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Restaurant/Menu Website{" "}
-                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
-                    NEW
-                  </span>
-                </Link>
-                <Link
-                  href="/website"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Freelancer Website{" "}
-                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
-                    NEW
-                  </span>
-                </Link>
-                <Link
-                  href="/website"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Portfolio Website{" "}
-                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
-                    NEW
-                  </span>
-                </Link>
+               
               </div>
             </div>
 
@@ -255,24 +229,7 @@ export default function Navbar() {
                     Hot
                   </span>
                 </li>
-                <li className="flex justify-between">
-                  <Link href="/website">Restaurant/Menu Website</Link>
-                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
-                    New
-                  </span>
-                </li>
-                <li className="flex justify-between">
-                  <Link href="/website">Freelancer Website</Link>
-                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
-                    New
-                  </span>
-                </li>
-                <li className="flex justify-between">
-                  <Link href="/website">Portfolio Website</Link>
-                  <span className="ml-2 text-xs bg-green-100 text-green-600 px-2 py-0.5 rounded">
-                    New
-                  </span>
-                </li>
+               
               </ul>
             </li>
 

@@ -124,14 +124,14 @@ export default function EcommercePlan() {
         "Social media integration (Instagram, Facebook)",
         "Custom domain setup (www.yourstore.com)",
       ],
-      cta: "https://paystack.shop/pay/starter",
+      cta: "https://paystack.shop/pay/-fthfp5xd1",
       tag: "Best for SME's",
     },
     {
       id: "growth",
       title: "Growth",
-      priceMonthly: 19_794, // double starter monthly
-      priceYearly: 399_794, // double starter yearly
+      priceMonthly: 32_574, // double starter monthly
+      priceYearly: 390_897, // double starter yearly
       description:
         "For growing businesses that need advanced tools & automation.",
       features: [
@@ -150,14 +150,14 @@ export default function EcommercePlan() {
         "Discount codes & promo management",
         "Abandoned cart recovery",
       ],
-      cta: "https://paystack.shop/pay/growth",
+      cta: "https://paystack.shop/pay/xx66olsqa4",
       tag: "Best for scaling",
     },
     {
       id: "pro",
       title: "Pro",
-      priceMonthly: 104_167, // approx (2.5M / 24 months)
-      priceYearly: 2_500_000,
+      priceMonthly: 207_574, // approx (2.5M / 12 months)
+      priceYearly: 2_490_897,
       description:
         "Enterprise-grade online store with full customization & automation.",
       features: [
@@ -176,7 +176,7 @@ export default function EcommercePlan() {
         "Custom domain & free SSL certificates",
         "Dedicated account manager",
       ],
-      cta: "https://paystack.shop/pay/pro",
+      cta: "https://paystack.shop/pay/2mfonnc2wc",
       tag: "Best for enterprises",
     },
   ];
