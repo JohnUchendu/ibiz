@@ -9,7 +9,7 @@ const PromoPopup: React.FC = () => {
 
   // Show popup 15 seconds after page load
   useEffect(() => {
-    const timer = setTimeout(() => setShowPopup(true), 55000);
+    const timer = setTimeout(() => setShowPopup(true), 90000099000);
     return () => clearTimeout(timer);
   }, []);
 

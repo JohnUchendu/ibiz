@@ -6,7 +6,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 import { SessionProvider } from "next-auth/react";
-import PromoPopup from "@/components/PromoPopUp";
+// import PromoPopup from "@/components/PromoPopUp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,7 +43,7 @@ export default function RootLayout({
           {children}
         </body>
       </html>
-      <PromoPopup/>
+      {/* <PromoPopup/> */}
       <Footer />
     </>
   );

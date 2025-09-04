@@ -1,4 +1,4 @@
-import Script from "next/script"
+import Script from "next/script";
 import ToolCard from "@/components/ToolCard";
 // import AdSlot from "@/components/AdSlot";
 import TestimonialCarousel from "@/components/Testimonial";
@@ -6,8 +6,8 @@ import TestimonialCarousel from "@/components/Testimonial";
 export default function HomePage() {
   return (
     <>
-
-    <Script
+      {/* Google Analytics */}
+      <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-8Q75XKPD1T"
         strategy="afterInteractive"
       />
@@ -20,85 +20,104 @@ export default function HomePage() {
         `}
       </Script>
 
-      <main className="mx-auto max-w-6xl px-4 py-10">
-        <section className="text-center">
-          <h1 className="text-3xl sm:text-4xl font-extrabold">
-            Free Tools for All Businesses 🚀
+      <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        {/* Hero */}
+        <section className="text-center max-w-2xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
+            The Business Starter Toolkit – Free tools for SMEs to be
+            professional online.
           </h1>
-          <p className="mt-3 text-gray-600">
-            Generate payment QR codes, invoices, receipts, posters and ID cards
-            — fast, free, no signup.
+          <p className="mt-4 text-lg text-gray-600">
+            Generate <span className="font-semibold">payment QR codes</span>,{" "}
+            <span className="font-semibold">invoices</span>,{" "}
+            <span className="font-semibold">receipts</span>,{" "}
+            <span className="font-semibold">posters</span> and{" "}
+            <span className="font-semibold">ID cards</span> — fast, free, no
+            signup required.
           </p>
         </section>
 
         {/* <AdSlot /> */}
 
-        <section className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          <ToolCard
-            title="QR Code Generator"
-            desc="Create payment or info QR codes for Paystack, Flutterwave, bank transfers, and more."
-            href="/qr-code-generator"
-          />
-          <ToolCard
-            title="Invoice Generator"
-            desc="Make clean, downloadable PDF invoices in seconds. No Excel needed."
-            href="/invoice-generator"
-          />
-          <ToolCard
-            title="Receipt Generator"
-            desc="Instant receipts for shops and freelancers — printable PDFs."
-            href="/receipt-generator"
-          />
-         
-          <ToolCard
-            title="ID Card Maker"
-            desc="Simple ID cards for staff, churches, schools — upload photo, export PDF."
-            href="/id-card-maker"
-          />
-
-          <ToolCard
-            title="SEO Audit Tool"
-            desc="Instantly check your website’s SEO health — metadata, performance, technical SEO & more."
-            href="/seo-audit"
-          />
-          <ToolCard
-            title="Website Builder"
-            desc="Get a professional website built for freelancers and business owners. Hosting, SEO & 3 business emails included."
-            href="/website"
-          />
-
-          <ToolCard
-            title="Business Email"
-            desc="Create professional custom emails (you@yourbusiness.com) to build trust with clients."
-            href="/email"
-          />
-          {/* Growth Tools */}
-         
-
-          <ToolCard
-            title="Domain Checker"
-            desc="Quickly check if your business domain is available and secure your online identity."
-            href="/domain-checker"
+        {/* Tools Grid */}
+        <section className="mt-12">
+          <h2 className="sr-only">Available Tools</h2>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <ToolCard
+              title="QR Code Generator"
+              desc="Create payment or info QR codes for Paystack, Flutterwave, bank transfers, and more."
+              href="/qr-code-generator"
             />
-
-          <ToolCard
-            title="Website Speed Test"
-            desc="Analyze your site’s speed and performance, with insights to boost conversions."
-            href="/website-speed-test"
-          />
+            <ToolCard
+              title="Invoice Generator"
+              desc="Make clean, downloadable PDF invoices in seconds. No Excel needed."
+              href="/invoice-generator"
+            />
+            <ToolCard
+              title="Receipt Generator"
+              desc="Instant receipts for shops and freelancers — printable PDFs."
+              href="/receipt-generator"
+            />
+            <ToolCard
+              title="ID Card Maker"
+              desc="Simple ID cards for staff, churches, schools — upload photo, export PDF."
+              href="/id-card-maker"
+            />
+            <ToolCard
+              title="SEO Audit Tool"
+              desc="Instantly check your website’s SEO health — metadata, performance, technical SEO & more."
+              href="/seo-audit"
+            />
+            <ToolCard
+              title="Website Builder"
+              desc="Get a professional website built for freelancers and business owners. Hosting, SEO & 3 business emails included."
+              href="/website"
+            />
+            <ToolCard
+              title="Business Email"
+              desc="Create professional custom emails (you@yourbusiness.com) to build trust with clients."
+              href="/email"
+            />
+            <ToolCard
+              title="Domain Checker"
+              desc="Quickly check if your business domain is available and secure your online identity."
+              href="/domain-checker"
+            />
+            <ToolCard
+              title="Website Speed Test"
+              desc="Analyze your site’s speed and performance, with insights to boost conversions."
+              href="/website-speed-test"
+            />
             <ToolCard
               title="Letterhead Maker"
               desc="Design professional company letterheads and export them as PDF or Word documents."
               href="/letterhead-maker"
             />
 
-         
+            <ToolCard
+              title="Email Signature Generator"
+              desc="Polished signature to gmail, outlook and more"
+              href="email-signature"
+            />
+
+            <ToolCard
+              title="Online Store"
+              desc="Make money while you sleep, get paid straight to your bank account"
+              href="/website/online-store"
+            />
+          </div>
         </section>
 
-        {/* <AdSlot /> */}
+        {/* Testimonials */}
+        <section className="mt-16">
+          <h2 className="text-center text-2xl font-bold text-gray-900 mb-8">
+            Loved by Businesses ❤️
+          </h2>
+          <TestimonialCarousel />
+        </section>
 
-            <TestimonialCarousel/>
-        {/* <section className="mt-10 prose max-w-none">
+        {/* SEO Section (optional) */}
+        {/* <section className="mt-20 prose max-w-3xl mx-auto text-gray-700">
           <h2 className="text-2xl font-bold">Why these “boring” tools?</h2>
           <p>
             Nigerian SMEs need fast, reliable tools to get paid and look
@@ -106,18 +125,6 @@ export default function HomePage() {
             with no signup or database. Perfect for shops, POS agents, churches,
             schools and events.
           </p>
-          <h3 className="text-xl font-semibold mt-6">
-            Popular searches we target
-          </h3>
-          <ul className="list-disc pl-5">
-            <li>Free QR code generator </li>
-            <li>Invoice template (PDF)</li>
-            <li>Generate receipt online </li>
-            <li>Free ID card maker </li>
-            <li>Free Logo maker </li>
-            <li>Free website for businesses</li>
-            <li>Business emails for businesses</li>
-          </ul>
         </section> */}
       </main>
     </>
