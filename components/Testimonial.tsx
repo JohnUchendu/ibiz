@@ -34,7 +34,7 @@ const testimonials: TestimonialProps[] = [
     photo: "/clients/ubani.png", // replace with actual
   },
   {
-    name: "Eljards Limited",
+    name: "Bob Pepple",
     role: "CEO",
     businessName: "Eljards Limited Services",
     businessLogo: "/logos/eljards.png", // replace with actual
