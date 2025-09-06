@@ -43,6 +43,12 @@ export default function HomePage() {
         <section className="mt-12">
           <h2 className="sr-only">Available Tools</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {/* <ToolCard
+              title="Business Name Generator"
+              desc="Create elegant names for your new business"
+              href="/business-name-generator"
+            /> */}
+
             <ToolCard
               title="QR Code Generator"
               desc="Create payment or info QR codes for Paystack, Flutterwave, bank transfers, and more."
@@ -59,7 +65,12 @@ export default function HomePage() {
               href="/receipt-generator"
             />
             <ToolCard
-              title="ID Card Maker"
+              title="Letterhead Maker"
+              desc="Design professional company letterheads and export them as PDF or Word documents."
+              href="/letterhead-maker"
+            />
+            <ToolCard
+              title="ID Card Design Maker"
               desc="Simple ID cards for staff, churches, schools — upload photo, export PDF."
               href="/id-card-maker"
             />
@@ -67,16 +78,6 @@ export default function HomePage() {
               title="SEO Audit Tool"
               desc="Instantly check your website’s SEO health — metadata, performance, technical SEO & more."
               href="/seo-audit"
-            />
-            <ToolCard
-              title="Website Builder"
-              desc="Get a professional website built for freelancers and business owners. Hosting, SEO & 3 business emails included."
-              href="/website"
-            />
-            <ToolCard
-              title="Business Email"
-              desc="Create professional custom emails (you@yourbusiness.com) to build trust with clients."
-              href="/email"
             />
             <ToolCard
               title="Domain Checker"
@@ -87,11 +88,6 @@ export default function HomePage() {
               title="Website Speed Test"
               desc="Analyze your site’s speed and performance, with insights to boost conversions."
               href="/website-speed-test"
-            />
-            <ToolCard
-              title="Letterhead Maker"
-              desc="Design professional company letterheads and export them as PDF or Word documents."
-              href="/letterhead-maker"
             />
 
             <ToolCard
@@ -104,6 +100,16 @@ export default function HomePage() {
               title="Online Store"
               desc="Make money while you sleep, get paid straight to your bank account"
               href="/website/online-store"
+            />
+            <ToolCard
+              title="Website Builder"
+              desc="Get a professional website built for freelancers and business owners. Hosting, SEO & 3 business emails included."
+              href="/website"
+            />
+            <ToolCard
+              title="Business Email"
+              desc="Create professional custom emails (you@yourbusiness.com) to build trust with clients."
+              href="/email"
             />
           </div>
         </section>

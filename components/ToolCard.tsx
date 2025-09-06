@@ -27,6 +27,7 @@ import {
   PenTool,
   Store,
   MailsIcon,
+  Handshake,
 } from "lucide-react";
 import { ReactNode } from "react";
 
@@ -44,6 +45,7 @@ const iconMap: Record<string, ReactNode> = {
 
   "Email Signature": <MailsIcon className="h-6 w-6 text-amber-600" />,
   "Online Store": <Store className="h-6 w-6 text-cyan-600" />,
+  "Business Name Generator": <Handshake className="h-6 w-6 text-green-600" />,
 };
 
 export default function ToolCard({
