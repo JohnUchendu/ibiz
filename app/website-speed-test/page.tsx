@@ -4,7 +4,7 @@
 "use client";
 
 import PromoBanner from "@/components/PromoBanner";
-import PromoPopup from "@/components/PromoPopUp";
+// import PromoPopup from "@/components/PromoPopUp";
 import React, { useState } from "react";
 
 type Result = {
@@ -174,7 +174,7 @@ export default function SpeedTestPage() {
       </section> */}
 
       <PromoBanner />
-      <PromoPopup />
+      {/* <PromoPopup /> */}
     </main>
   );
 }

@@ -225,7 +225,7 @@ import { FiPlusCircle, FiDownload } from "react-icons/fi";
 import jsPDF from "jspdf";
 import QRCode from "qrcode";
 import PromoBanner from "@/components/PromoBanner";
-import PromoPopup from "@/components/PromoPopUp";
+// import PromoPopup from "@/components/PromoPopUp";
 import TestimonialCarousel from "@/components/Testimonial";
 
 type InvoiceItem = {
@@ -424,7 +424,7 @@ export default function InvoiceGenerator() {
       </div>
       <TestimonialCarousel/>
       <PromoBanner/>
-      <PromoPopup/>
+      {/* <PromoPopup/> */}
     </>
   );
 }
