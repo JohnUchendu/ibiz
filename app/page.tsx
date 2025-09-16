@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Script from "next/script";
 import ToolCard from "@/components/ToolCard";
 // import AdSlot from "@/components/AdSlot";
@@ -6,6 +7,39 @@ import TestimonialCarousel from "@/components/Testimonial";
 export default function HomePage() {
   return (
     <>
+<Head>
+        <title>Business Starter Toolkit - Free Tools for SMEs</title>
+
+        {/* Standard SEO Meta Tags */}
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Free tools for SMEs to create QR codes, invoices, receipts, letterheads, and more. No signup required, export as PDF." />
+        <meta name="keywords" content="business tools, free QR code generator, invoice generator, receipt generator, letterhead maker, SME tools, Nigeria business" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Business Starter Toolkit" />
+
+        {/* Open Graph Meta Tags (for WhatsApp, Facebook, X, etc.) */}
+        <meta property="og:type" content="website" key="og:type" />
+        <meta property="og:title" content="Business Starter Toolkit - Free Tools for SMEs" key="og:title" />
+        <meta property="og:description" content="Create payment QR codes, invoices, receipts, letterheads, and more for your business. Free, fast, no signup needed." key="og:description" />
+        <meta property="og:image" content="https://ibiz.name.ng/logos/logo.png" key="og:image" />
+        <meta property="og:image:alt" content="Preview of Business Starter Toolkit tools for SMEs" key="og:image:alt" />
+        <meta property="og:image:width" content="1200" key="og:image:width" />
+        <meta property="og:image:height" content="630" key="og:image:height" />
+        <meta property="og:url" content="https://ibiz.name.ng" key="og:url" />
+        <meta property="og:site_name" content="Business Starter Toolkit" key="og:site_name" />
+
+        {/* Twitter Card Meta Tags (for X) */}
+        <meta name="twitter:card" content="summary_large_image" key="twitter:card" />
+        <meta name="twitter:title" content="Business Starter Toolkit - Free Tools for SMEs" key="twitter:title" />
+        <meta name="twitter:description" content="Free tools for SMEs: QR codes, invoices, receipts, and more. No signup, export as PDF." key="twitter:description" />
+        <meta name="twitter:image" content="https://ibiz.name.ng/logos/logo.png" key="twitter:image" />
+        <meta name="twitter:image:alt" content="Preview of Business Starter Toolkit tools for SMEs" key="twitter:image:alt" />
+        <meta name="twitter:site" content="@jjdagreat" key="twitter:site" />
+        <meta name="twitter:creator" content="@jjdagreat" key="twitter:creator" />
+      </Head>
+
+
       {/* Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-8Q75XKPD1T"
@@ -51,7 +85,7 @@ export default function HomePage() {
 
             <ToolCard
               title="QR Code Generator"
-              desc="Create payment or info QR codes for Paystack, Flutterwave, bank transfers, and more."
+              desc="Create custom or info QR codes for websites, menus and more"
               href="/qr-code-generator"
             />
             <ToolCard
@@ -61,7 +95,7 @@ export default function HomePage() {
             />
             <ToolCard
               title="Receipt Generator"
-              desc="Instant receipts for shops and freelancers — printable PDFs."
+              desc="Instant receipts for businesses and freelancers — printable PDFs."
               href="/receipt-generator"
             />
             <ToolCard
