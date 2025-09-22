@@ -1,12 +1,60 @@
-import Head from "next/head";
+import React from "react"
+import type { Metadata } from "next";
+
+import Head from "next/head"
 import Script from "next/script";
 import ToolCard from "@/components/ToolCard";
 // import AdSlot from "@/components/AdSlot";
 import TestimonialCarousel from "@/components/Testimonial";
 
-export default function HomePage() {
-  return (
-    <>
+// export const metadata: Metadata = {
+//   alternates: {
+//     canonical: "https://eljardsltdservices.com",
+//     languages: {
+//       "en-US": "/en-US",
+//       "en-GB": "/en-GB",
+//     },
+//   },
+//   openGraph: {
+//     title: "Eljards Ltd | Powering Your Home, Business & Drive",
+//     description:
+//       "From solar installations to car upgrades and business growth, Eljards Ltd is your trusted partner in transformation.",
+//     url: "https://eljardsltdservices.com",
+//     siteName: "Eljards Ltd Services",
+//     images: [
+//       {
+//         url: "/logos/eljardslogo.png",
+//         width: 800,
+//         height: 600,
+//         alt: "Eljards Ltd Services",
+//       },
+//     ],
+//     locale: "en_NG",
+//     type: "website",
+//   },
+//   title: "Eljards Ltd Services | Solar Energy & Business Consulting in Nigeria",
+//   description:
+//     "Empowering Nigerians with clean energy,  and strategic business growth. Discover how Eljards Ltd transforms lives and industries.",
+//   generator: "",
+//   applicationName: " Eljards Ltd Services",
+//   referrer: "origin-when-cross-origin",
+//   keywords: [
+//     "Eljards Ltd Services",
+//     "solar energy Nigeria",
+
+//     "business consulting Nigeria",
+//     "WiSolar Nigeria",
+//   ],
+//   authors: [{ name: "ECA" }],
+//   creator: " ECA",
+//   publisher: " ECA",
+//   formatDetection: {
+//     email: false,
+//     address: false,
+//     telephone: false,
+//   },
+// };
+
 <Head>
         <title>Business Starter Toolkit - Free Tools for SMEs</title>
 
@@ -38,6 +86,10 @@ export default function HomePage() {
         <meta name="twitter:site" content="@jjdagreat" key="twitter:site" />
         <meta name="twitter:creator" content="@jjdagreat" key="twitter:creator" />
       </Head>
+
+export default function HomePage() {
+  return (
+    <>
 
 
       {/* Google Analytics */}
