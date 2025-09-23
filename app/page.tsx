@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import type { Metadata } from "next";
 
 import Script from "next/script";
@@ -7,49 +7,38 @@ import ToolCard from "@/components/ToolCard";
 import TestimonialCarousel from "@/components/Testimonial";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.ibiz.name.ng."),
   alternates: {
-    canonical: "https://ibiz.name.ng",
+    canonical: "https://www.ibiz.name.ng",
     languages: {
       "en-US": "/en-US",
       "en-GB": "/en-GB",
     },
   },
-  openGraph: {
-    title: "Business Starter Toolkit - Free Tools for SMEs" ,
-    description:
-      "Free tools for SMEs to create QR codes, invoices, receipts, letterheads, and more. No signup required, export as PDF.",
-    url: "https://ibiz.name.ng",
-    siteName: "iBiz Business Suite",
-    images: [
-      {
-        url: "/logos/logo.png",
-        width: 800,
-        height: 600,
-        alt: "iBiz Business Suite",
-      },
-    ],
-    locale: "en_NG",
-    type: "website",
-  },
-  title: "Business Starter Toolkit - Free Tools for SMEs",
+
+  title:
+    "Leading Email marketing, Business Starter Toolkit - Free Tools for SMEs",
   description:
     "Free tools for SMEs to create QR codes, invoices, receipts, letterheads, and more. No signup required, export as PDF.",
   generator: "",
-  applicationName: " iBiz Business Suite",
+  applicationName: "iBiz Business Suite",
   referrer: "origin-when-cross-origin",
   keywords: [
-   "business tools",
+    "Email to inbox",
+    "Email templates",
+    "Get more customers with email marketing",
+    "business tools",
     "free QR code generator",
-     "invoice generator",
-      "receipt generator",
-      "letterhead maker",
-       "SME tools",
-        "Nigeria business ",
-        "Make sales email list"
+    "invoice generator",
+    "receipt generator",
+    "letterhead maker",
+    "SME tools",
+    "Nigeria business ",
+    "Make sales email list",
   ],
-  authors: [{ name: "iBiz " }],
-  creator: " iBiz",
-  publisher: " iBiz ",
+  authors: [{ name: "iBiz Business Suite" }],
+  creator: "iBiz Business Suite",
+  publisher: "iBiz Business Suite",
   formatDetection: {
     email: false,
     address: false,
@@ -57,12 +46,9 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function HomePage() {
   return (
     <>
-
-
       {/* Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-8Q75XKPD1T"
