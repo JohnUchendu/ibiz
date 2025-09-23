@@ -1,91 +1,62 @@
 import React from "react"
-// import type { Metadata } from "next";
+import type { Metadata } from "next";
 
-import Head from "next/head"
 import Script from "next/script";
 import ToolCard from "@/components/ToolCard";
 // import AdSlot from "@/components/AdSlot";
 import TestimonialCarousel from "@/components/Testimonial";
 
-// export const metadata: Metadata = {
-//   alternates: {
-//     canonical: "https://eljardsltdservices.com",
-//     languages: {
-//       "en-US": "/en-US",
-//       "en-GB": "/en-GB",
-//     },
-//   },
-//   openGraph: {
-//     title: "Eljards Ltd | Powering Your Home, Business & Drive",
-//     description:
-//       "From solar installations to car upgrades and business growth, Eljards Ltd is your trusted partner in transformation.",
-//     url: "https://eljardsltdservices.com",
-//     siteName: "Eljards Ltd Services",
-//     images: [
-//       {
-//         url: "/logos/eljardslogo.png",
-//         width: 800,
-//         height: 600,
-//         alt: "Eljards Ltd Services",
-//       },
-//     ],
-//     locale: "en_NG",
-//     type: "website",
-//   },
-//   title: "Eljards Ltd Services | Solar Energy & Business Consulting in Nigeria",
-//   description:
-//     "Empowering Nigerians with clean energy,  and strategic business growth. Discover how Eljards Ltd transforms lives and industries.",
-//   generator: "",
-//   applicationName: " Eljards Ltd Services",
-//   referrer: "origin-when-cross-origin",
-//   keywords: [
-//     "Eljards Ltd Services",
-//     "solar energy Nigeria",
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://ibiz.name.ng",
+    languages: {
+      "en-US": "/en-US",
+      "en-GB": "/en-GB",
+    },
+  },
+  openGraph: {
+    title: "Business Starter Toolkit - Free Tools for SMEs" ,
+    description:
+      "Free tools for SMEs to create QR codes, invoices, receipts, letterheads, and more. No signup required, export as PDF.",
+    url: "https://ibiz.name.ng",
+    siteName: "iBiz Business Suite",
+    images: [
+      {
+        url: "/logos/logo.png",
+        width: 800,
+        height: 600,
+        alt: "iBiz Business Suite",
+      },
+    ],
+    locale: "en_NG",
+    type: "website",
+  },
+  title: "Business Starter Toolkit - Free Tools for SMEs",
+  description:
+    "Free tools for SMEs to create QR codes, invoices, receipts, letterheads, and more. No signup required, export as PDF.",
+  generator: "",
+  applicationName: " iBiz Business Suite",
+  referrer: "origin-when-cross-origin",
+  keywords: [
+   "business tools",
+    "free QR code generator",
+     "invoice generator",
+      "receipt generator",
+      "letterhead maker",
+       "SME tools",
+        "Nigeria business ",
+        "Make sales email list"
+  ],
+  authors: [{ name: "iBiz " }],
+  creator: " iBiz",
+  publisher: " iBiz ",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+};
 
-//     "business consulting Nigeria",
-//     "WiSolar Nigeria",
-//   ],
-//   authors: [{ name: "ECA" }],
-//   creator: " ECA",
-//   publisher: " ECA",
-//   formatDetection: {
-//     email: false,
-//     address: false,
-//     telephone: false,
-//   },
-// };
-
-<Head>
-        <title>Business Starter Toolkit - Free Tools for SMEs</title>
-
-        {/* Standard SEO Meta Tags */}
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Free tools for SMEs to create QR codes, invoices, receipts, letterheads, and more. No signup required, export as PDF." />
-        <meta name="keywords" content="business tools, free QR code generator, invoice generator, receipt generator, letterhead maker, SME tools, Nigeria business" />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Business Starter Toolkit" />
-
-        {/* Open Graph Meta Tags (for WhatsApp, Facebook, X, etc.) */}
-        <meta property="og:type" content="website" key="og:type" />
-        <meta property="og:title" content="Business Starter Toolkit - Free Tools for SMEs" key="og:title" />
-        <meta property="og:description" content="Create payment QR codes, invoices, receipts, letterheads, and more for your business. Free, fast, no signup needed." key="og:description" />
-        <meta property="og:image" content="https://ibiz.name.ng/logos/logo.png" key="og:image" />
-        <meta property="og:image:alt" content="Preview of Business Starter Toolkit tools for SMEs" key="og:image:alt" />
-        <meta property="og:image:width" content="1200" key="og:image:width" />
-        <meta property="og:image:height" content="630" key="og:image:height" />
-        <meta property="og:url" content="https://ibiz.name.ng" key="og:url" />
-        <meta property="og:site_name" content="Business Starter Toolkit" key="og:site_name" />
-
-        {/* Twitter Card Meta Tags (for X) */}
-        <meta name="twitter:card" content="summary_large_image" key="twitter:card" />
-        <meta name="twitter:title" content="Business Starter Toolkit - Free Tools for SMEs" key="twitter:title" />
-        <meta name="twitter:description" content="Free tools for SMEs: QR codes, invoices, receipts, and more. No signup, export as PDF." key="twitter:description" />
-        <meta name="twitter:image" content="https://ibiz.name.ng/logos/logo.png" key="twitter:image" />
-        <meta name="twitter:image:alt" content="Preview of Business Starter Toolkit tools for SMEs" key="twitter:image:alt" />
-        <meta name="twitter:site" content="@jjdagreat" key="twitter:site" />
-        <meta name="twitter:creator" content="@jjdagreat" key="twitter:creator" />
-      </Head>
 
 export default function HomePage() {
   return (
