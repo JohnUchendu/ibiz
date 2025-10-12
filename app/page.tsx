@@ -5,6 +5,7 @@ import Script from "next/script";
 import ToolCard from "@/components/ToolCard";
 // import AdSlot from "@/components/AdSlot";
 import TestimonialCarousel from "@/components/Testimonial";
+import Packages from "@/components/Packages";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.ibiz.name.ng."),
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   title:
-    "Leading Email marketing, Business Starter Toolkit - Free Tools for SMEs",
+    "Business Starter Toolkit - Free Tool & Digital Services",
   description:
     "Free tools for SMEs to create QR codes, invoices, receipts, letterheads, and more. No signup required, export as PDF.",
   generator: "",
@@ -80,6 +81,7 @@ export default function HomePage() {
           </p>
         </section>
 
+        <Packages />
         {/* <AdSlot /> */}
 
         {/* Tools Grid */}
