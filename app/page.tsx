@@ -5,7 +5,7 @@ import Script from "next/script";
 import ToolCard from "@/components/ToolCard";
 // import AdSlot from "@/components/AdSlot";
 import TestimonialCarousel from "@/components/Testimonial";
-import Packages from "@/components/Packages";
+// import Packages from "@/components/Packages";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.ibiz.name.ng."),
@@ -81,7 +81,7 @@ export default function HomePage() {
           </p>
         </section>
 
-        <Packages />
+        {/* <Packages /> */}
         {/* <AdSlot /> */}
 
         {/* Tools Grid */}
@@ -109,7 +109,7 @@ export default function HomePage() {
               desc="Instant receipts for businesses and freelancers — printable PDFs."
               href="/receipt-generator"
             />
-            <ToolCard
+            {/* <ToolCard
               title="Letterhead Maker"
               desc="Design professional company letterheads and export them as PDF or Word documents."
               href="/letterhead-maker"
@@ -139,7 +139,7 @@ export default function HomePage() {
               title="Email Signature Generator"
               desc="Polished signature to gmail, outlook and more"
               href="email-signature"
-            />
+            /> */}
 
             <ToolCard
               title="Online Store"
