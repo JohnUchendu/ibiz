@@ -72,12 +72,12 @@ export default function HomePage() {
             professional online.
           </h1>
           <p className="mt-4 text-lg text-gray-600">
-            Generate <span className="font-semibold">payment QR codes</span>,{" "}
-            <span className="font-semibold">invoices</span>,{" "}
-            <span className="font-semibold">receipts</span>,{" "}
-            <span className="font-semibold">posters</span> and{" "}
-            <span className="font-semibold">ID cards</span> — fast, free, no
-            signup required.
+            Generate <span className="font-semibold"> QR codes</span>,{" "}
+            <span className="font-semibold">Invoices</span>,{" "}
+            <span className="font-semibold">Receipts</span>,{" "}
+            <span className="font-semibold">AI</span>,{" "}
+            <span className="font-semibold">Get corporate websites</span> and{" "}
+            <span className="font-semibold">Sell online fast and secure</span> 
           </p>
         </section>
 
@@ -95,20 +95,20 @@ export default function HomePage() {
             /> */}
 
             <ToolCard
-              title="QR Code Generator"
+              title="QR Code "
               desc="Create custom or info QR codes for websites, menus and more"
               href="/qr-code-generator"
             />
             <ToolCard
-              title="Invoice Generator"
+              title="Invoice "
               desc="Make clean, downloadable PDF invoices in seconds. No Excel needed."
               href="/invoice-generator"
             />
-            <ToolCard
-              title="Receipt Generator"
+            {/* <ToolCard
+              title="Receipt "
               desc="Instant receipts for businesses and freelancers — printable PDFs."
               href="/receipt-generator"
-            />
+            /> */}
             {/* <ToolCard
               title="Letterhead Maker"
               desc="Design professional company letterheads and export them as PDF or Word documents."
@@ -141,21 +141,17 @@ export default function HomePage() {
               href="email-signature"
             /> */}
 
+            {/*  */}
             <ToolCard
-              title="Online Store"
-              desc="Make money while you sleep, get paid straight to your bank account"
-              href="/website/online-store"
-            />
-            <ToolCard
-              title="Website Builder"
+              title="Websites"
               desc="Get a professional website built for freelancers and business owners. Hosting, SEO & 3 business emails included."
-              href="/website"
+              href="/websites"
             />
-            <ToolCard
-              title="Business Email"
-              desc="Create professional custom emails (you@yourbusiness.com) to build trust with clients."
+            {/* <ToolCard
+              title="Email"
+              desc="Create professional custom emails (you@yourbusiness.com) to build trust with clients. Send marketing emails and transactional emails delivered to inbox"
               href="/email"
-            />
+            /> */}
           </div>
         </section>
 

@@ -26,9 +26,7 @@ export default function RootLayout({
     <>
       <Nav />
       <br />
-      <br />
-      <br />
-      <br />
+    <br/>
       <html lang="en">
         {/* NOTE: Add your AdSense script here after approval */}
         {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXX" crossOrigin="anonymous"></script> */}

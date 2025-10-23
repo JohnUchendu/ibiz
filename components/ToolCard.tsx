@@ -32,19 +32,19 @@ import {
 import { ReactNode } from "react";
 
 const iconMap: Record<string, ReactNode> = {
-  "QR Code Generator": <QrCode className="h-6 w-6 text-blue-600" />,
-  "Invoice Generator": <FileText className="h-6 w-6 text-green-600" />,
+  "QR Code ": <QrCode className="h-6 w-6 text-blue-600" />,
+  "Invoice ": <FileText className="h-6 w-6 text-green-600" />,
   // "Receipt Generator": <Receipt className="h-6 w-6 text-purple-600" />,
   // "ID Card  Design Maker": <IdCard className="h-6 w-6 text-pink-600" />,
   // "SEO Audit Tool": <Search className="h-6 w-6 text-orange-600" />,
-  "Website Builder": <Rocket className="h-6 w-6 text-indigo-600" />,
+  "Websites ": <Rocket className="h-6 w-6 text-indigo-600" />,
   // "Letterhead Maker": <PenTool className="h-6 w-6 text-cyan-600" />,
-  "Business Email": <Mail className="h-6 w-6 text-teal-600" />,
+  "Emails": <Mail className="h-6 w-6 text-teal-600" />,
   // "Domain Checker": <Globe className="h-6 w-6 text-red-600" />,
   // "Website Speed Test": <Gauge className="h-6 w-6 text-amber-600" />,
 
   // "Email Signature": <MailsIcon className="h-6 w-6 text-amber-600" />,
-  "Online Store": <Store className="h-6 w-6 text-cyan-600" />,
+  "Online Store ": <Store className="h-6 w-6 text-cyan-600" />,
   // "Business Name Generator": <Handshake className="h-6 w-6 text-green-600" />,
 };
 

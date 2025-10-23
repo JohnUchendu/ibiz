@@ -26,33 +26,20 @@ export default function Navbar() {
       subItems: [
         { name: "QR Code Generator", href: "/qr-code-generator", tag: "New" },
         { name: "Invoice Generator", href: "/invoice-generator", tag: "New" },
-        { name: "Domain Checker", href: "/domain-checker", tag: "New" },
+        // { name: "Receipt Generator", href: "/receipt-generator", tag: "New" },
       ],
     },
     {
       name: "Website",
       subItems: [
-        { name: "Business Website", href: "/website", tag: "Hot" },
-        { name: "Online Store", href: "/website/online-store", tag: "Hot" },
-      ],
-    },
-    {
-      name: "Email",
-      subItems: [
-        { name: "Business Email", href: "/email", tag: "Hot" },
-        { name: "Marketing Email", href: "/email", tag: "Hot" },
-      ],
-    },
-    {
-      name: "SMS",
-      subItems: [
-        { name: "SMS Tools", href: "#", tag: "Coming Soon", disabled: true },
+        { name: "Business Website", href: "/websites/business", tag: "Hot" },
+        { name: "Online Store", href: "/websites/online-store", tag: "Hot" },
       ],
     },
   ];
 
   return (
-    <nav className="bg-white shadow-md fixed w-full z-50 transition-all duration-300">
+    <nav className="bg-gray-900 text-white fixed w-full z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -60,11 +47,57 @@ export default function Navbar() {
             <Link href="/" className="flex-shrink-0">
               <Image
                 src="/logos/logo.png"
-                height={80}
-                width={80}
+                height={60}
+                width={60}
                 alt="iBiz logo"
-                className="hover:opacity-80 transition-opacity duration-200"
+                className="hover:opacity-90 transition-opacity duration-300"
               />
+            </Link>
+          </div>
+
+          {/* Desktop Menu */}
+          <div className="hidden sm:flex sm:items-center sm:space-x-6">
+            {navItems.map((item) => (
+              <div key={item.name} className="group relative">
+                <button className="text-gray-200 hover:text-blue-400 font-medium transition-colors duration-300">
+                  {item.name}
+                </button>
+                <ul className="absolute left-0 top-full hidden group-hover:block bg-gray-800 text-white shadow-xl rounded-lg p-3 w-56 opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2 transition-all duration-300">
+                  {item.subItems.map((subItem) => (
+                    <li
+                      key={subItem.name}
+                      className={`px-4 py-2 hover:bg-gray-700 rounded-md flex justify-between items-center ${
+                        subItem.disabled ? "text-gray-500 cursor-not-allowed" : ""
+                      }`}
+                    >
+                      <Link
+                        href={subItem.href}
+                        className={subItem.disabled ? "pointer-events-none" : "hover:text-blue-400"}
+                        aria-disabled={subItem.disabled}
+                      >
+                        {subItem.name}
+                      </Link>
+                      <span
+                        className={`text-xs px-2 py-1 rounded-full ${
+                          subItem.tag === "Coming Soon"
+                            ? "bg-yellow-600 text-yellow-100"
+                            : subItem.tag === "Hot"
+                            ? "bg-red-600 text-red-100"
+                            : "bg-green-600 text-green-100"
+                        }`}
+                      >
+                        {subItem.tag}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+            <Link
+              href="/websites/business"
+              className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition duration-300"
+            >
+              Get Started
             </Link>
           </div>
 
@@ -73,7 +106,7 @@ export default function Navbar() {
             <button
               onClick={toggleMenu}
               aria-label={isOpen ? "Close menu" : "Open menu"}
-              className="p-2 rounded-md text-gray-600 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-200"
+              className="p-2 rounded-md text-gray-300 hover:text-blue-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-300"
             >
               <svg
                 className="w-6 h-6"
@@ -99,62 +132,19 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
-
-          {/* Desktop Menu */}
-          <div className="hidden sm:flex sm:space-x-8 sm:items-center">
-            {navItems.map((item) => (
-              <div key={item.name} className="group relative">
-                <button
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
-                  aria-expanded="false"
-                >
-                  {item.name}
-                </button>
-                <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-lg p-2 w-52 opacity-0 group-hover:opacity-100 transform group-hover:translate-y-0 translate-y-2 transition-all duration-200">
-                  {item.subItems.map((subItem) => (
-                    <li
-                      key={subItem.name}
-                      className={`px-4 py-2 hover:bg-gray-100 flex justify-between items-center ${
-                        subItem.disabled ? "text-gray-400 cursor-not-allowed" : ""
-                      }`}
-                    >
-                      <Link
-                        href={subItem.href}
-                        className={subItem.disabled ? "pointer-events-none" : ""}
-                        aria-disabled={subItem.disabled}
-                      >
-                        {subItem.name}
-                      </Link>
-                      <span
-                        className={`ml-2 text-xs px-2 py-0.5 rounded ${
-                          subItem.tag === "Coming Soon"
-                            ? "bg-yellow-100 text-yellow-600"
-                            : subItem.tag === "Hot"
-                            ? "bg-red-100 text-red-600"
-                            : "bg-green-100 text-green-600"
-                        }`}
-                      >
-                        {subItem.tag}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 
       {/* Mobile Dropdown */}
       <div
-        className={`sm:hidden bg-white shadow-lg overflow-hidden transition-all duration-300 ${
+        className={`sm:hidden bg-gray-900 text-white overflow-hidden transition-all duration-300 ${
           isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <ul className="p-4 space-y-4">
           {navItems.map((item) => (
             <li key={item.name}>
-              <button className="font-semibold text-gray-700 w-full text-left">
+              <button className="font-semibold text-gray-200 w-full text-left">
                 {item.name}
               </button>
               <ul className="pl-4 mt-2 space-y-2">
@@ -162,23 +152,23 @@ export default function Navbar() {
                   <li
                     key={subItem.name}
                     className={`flex justify-between items-center ${
-                      subItem.disabled ? "text-gray-400" : ""
+                      subItem.disabled ? "text-gray-500" : ""
                     }`}
                   >
                     <Link
                       href={subItem.href}
-                      className={subItem.disabled ? "pointer-events-none" : ""}
+                      className={subItem.disabled ? "pointer-events-none" : "hover:text-blue-400"}
                       aria-disabled={subItem.disabled}
                     >
                       {subItem.name}
                     </Link>
                     <span
-                      className={`ml-2 text-xs px-2 py-0.5 rounded ${
+                      className={`text-xs px-2 py-1 rounded-full ${
                         subItem.tag === "Coming Soon"
-                          ? "bg-yellow-100 text-yellow-600"
+                          ? "bg-yellow-600 text-yellow-100"
                           : subItem.tag === "Hot"
-                          ? "bg-red-100 text-red-600"
-                          : "bg-green-100 text-green-600"
+                          ? "bg-red-600 text-red-100"
+                          : "bg-green-600 text-green-100"
                       }`}
                     >
                       {subItem.tag}
@@ -188,6 +178,14 @@ export default function Navbar() {
               </ul>
             </li>
           ))}
+          <li>
+            <Link
+              href="/websites/business"
+              className="block bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-blue-700 transition duration-300"
+            >
+              Get Started
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
