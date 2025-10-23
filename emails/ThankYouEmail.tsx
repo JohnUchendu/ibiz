@@ -26,7 +26,7 @@ const ThankYouEmail: React.FC<ThankYouEmailProps> = ({ name, projectType, compan
             </Text>
             <Text className="text-base leading-7">
               Want to explore more? Check out our{' '}
-              <a href="https://ibiz.name.ng/pricing" className="text-blue-600 hover:underline">
+              <a href="https://ibiz.name.ng/websites" className="text-blue-600 hover:underline">
                 pricing plans
               </a>{' '}
               or browse our{' '}

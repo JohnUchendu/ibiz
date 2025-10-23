@@ -50,7 +50,7 @@ export async function POST(req: NextRequest) {
 
     // Send automated response to user
     await resend.emails.send({
-      from: 'iBiz Contact <contact@ibiz.name.ng>', // Replace with your verified sender
+      from: 'John from iBiz <response@mail.ibiz.name.ng>', // Replace with your verified sender
       to: [sanitizedBody.email],
       subject: "Thanks for Reaching Out – We're Excited to Help!",
       react: ThankYouEmail(sanitizedBody) as ReactElement,
@@ -58,7 +58,7 @@ export async function POST(req: NextRequest) {
 
     // Send notification to admin
     await resend.emails.send({
-      from: 'iBiz Contact <contact@ibiz.name.ng>',
+      from: 'iBiz Contact <contact@mail.ibiz.name.ng>',
       to: ['info@ibiz.name.ng'],
       subject: 'New Contact Form Submission',
       react: AdminNotificationEmail(sanitizedBody) as ReactElement,
