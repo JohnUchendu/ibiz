@@ -32,7 +32,7 @@
     "jspdf-autotable": "^5.0.2",
     "lodash.escape": "^4.0.1",
     "lucide-react": "^0.540.0",
-    "next": "15.4.7",
+    "next": "15.4.10",
     "next-auth": "^4.24.11",
     "next-sitemap": "^4.2.3",
     "postcss": "^8.5.6",
@@ -61,4 +61,3 @@
     "typescript": "^5"
   }
 }
-
